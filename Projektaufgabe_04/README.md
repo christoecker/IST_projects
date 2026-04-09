@@ -2,7 +2,7 @@
 
 Klärschlamm entsteht bei der biologischen Reinigung von Abwasser und wird typischerweise zunächst getrocknet und dann verbrannt. Damit solche Verbrennungsanlagen wirtschaftlich betrieben werden können, werden sie groß dimensioniert und können dann Klärschlamm aus einem weiten Umkreis aufnehmen und verbrennen. Der Klärschlamm wird dann über Kipper angeliefert. Um den Verbrennungsprozess kontinuierlich betreiben zu können, wird der Klärschlamm in einer Lagerhalle zwischengelagert.
 
-![](file:./Lageraufbau.png)
+![](Lageraufbau.png)
 
 # 1. Anlagenbeschreibung
 
@@ -63,7 +63,7 @@ Zusätzlich befindet sich hier das Objekt Storage, welches die Informationen der
 
 ## 2.2 Schnittstelle zwischen Simulation und Steuerung
 
-Die Kommunikation erfolgt über eine globale Variablenliste (GVL_Global) mit direkt zugeordneten Ein- und Ausgängen.
+Die Kommunikation erfolgt über eine globale Variablenliste (*GVL_Global*) mit direkt zugeordneten Ein- und Ausgängen.
 
 **Eingangssignale (Simulation → Steuerung)**
 
@@ -98,12 +98,12 @@ Dieser Funktionsbaustein ist ein Objekt, das de Speicherung und Steuerung der La
 
 | **Methode**                                  | **Beschreibung**                                   |
 | -------------------------------------------- | -------------------------------------------------- |
-| $M\_GetId(nIndex1, nIndex2)$                 | Liefert Platz-ID                                   |
-| $M\_Init$                                    | Definiert Platz-IDs beim Start der Steuerung       |
-| $M\_IsPlaceBlocked(nIndex1, nIndex2)$        | Checkt, ob Platz belegt ist                        |
-| $M\_IsPlaceReady(nIndex1, nIndex2)$          | Checkt, ob Schlamm auf Platz fertig getrocknet ist |
-| $M\_PlaceSludge(nIndex1, nIndex2, stSludge)$ | Platziert Schlamm auf den angegebenen Platz        |
-| $M\_RemoveSludge(nID)$                       | Entfernt Schlamm von Platz mit angegebener ID      |
+| *M_GetId(nIndex1, nIndex2)*                 | Liefert Platz-ID                                   |
+| *M_Init*                                    | Definiert Platz-IDs beim Start der Steuerung       |
+| *M_IsPlaceBlocked(nIndex1, nIndex2)*       | Checkt, ob Platz belegt ist                        |
+| *M_IsPlaceReady(nIndex1, nIndex2)*         | Checkt, ob Schlamm auf Platz fertig getrocknet ist |
+| *M_PlaceSludge(nIndex1, nIndex2, stSludge)* | Platziert Schlamm auf den angegebenen Platz        |
+| *M_RemoveSludge(nID)*                       | Entfernt Schlamm von Platz mit angegebener ID      |
 
 ## 2.5 Bedienkonzept
 
